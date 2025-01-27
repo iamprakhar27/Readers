@@ -31,23 +31,19 @@ Other Tools: JWT, Bcrypt, Cloudinary, Mongoose
 ⚙️ How to Run Locally
 
 Clone the repo:
-
-git clone https://github.com/your-username/readers.git
+git clone https://github.com/iamprakhar27/readers.git
 cd readers
 
 Install dependencies for both frontend and backend:
-
 cd frontend && npm install
 cd ../backend && npm install
 
 Set up .env in server:
-
 PORT=5000
 MONGO_URI=your-mongodb-uri
 JWT_SECRET=your-jwt-secret
 
 Run the app:
-
 # Backend
 cd backend && npm start
 
