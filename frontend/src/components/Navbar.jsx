@@ -44,6 +44,7 @@ const Navbar = () => {
                 <Link to="/">Most Popular</Link>
                 <Link to="/">About</Link>
 
+
                     <Link to="/login">
                         <button className="py-2 px-4 rounded-3xl bg-teal-800 text-white cursor-pointer">
                             Login
