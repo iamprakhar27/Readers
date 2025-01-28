@@ -2,29 +2,34 @@ import { Schema } from "mongoose";
 import mongoose from "mongoose";
 
 const userSchema = new Schema({
-    clerkUserId:{
-        type:String,
-        required:true,
-        unique:true,
+
+    fullName: {
+        type: String,
+        required: true,
     },
-    username:{
-        type:String,
-        required:true,
-        unique:true,
+    username: {
+        type: String,
+        required: true,
+        unique: true,
     },
-    email:{
-        type:String,
-        required:true,
-        unique:true,
+    email: {
+        type: String,
+        required: true,
+        unique: true,
     },
-    img:{
-        type:String,
+    password: {
+        type: String,
+        required: true,
+        minlength: 6,
     },
-    savedPosts:{
-        type:[String],
-        default:[],
+    img: {
+        type: String,
+    },
+    savedPosts: {
+        type: [String],
+        default: [],
 
     },
-},{timestamps: true})
+}, { timestamps: true })
 
-export default mongoose.model("User",userSchema)
+export default mongoose.model("User", userSchema)
